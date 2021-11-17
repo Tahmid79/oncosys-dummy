@@ -1,9 +1,7 @@
 <mat-toolbar class="toolbar" fxLayout="row" fxLayoutAlign="space-between center">
   <div>
-    <button mat-button [routerLink]="['/']">
-      <div fxFlex="column" fxLayoutAlign="space-around center">
-        <img class="logo-img" src="assets/images/logo.png"   />
-      </div>
+    <button mat-button [routerLink]="['/']" fxFlex="column" fxLayoutAlign="space-around center" >
+      <img class="logo-img" [src]="logoUrl"   />
     </button>
   </div>
 
@@ -11,7 +9,9 @@
   <div fxLayout="row">
 
     <div>
-      <button mat-button>About</button>
+      <button mat-button [routerLink]="['about']" >
+        About
+      </button>
     </div>
 
     <div>

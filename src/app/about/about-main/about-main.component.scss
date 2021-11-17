@@ -1,0 +1,25 @@
+.about-container{
+  height: 100vh ;
+  background-image: url("/assets/images/info-bg.jpg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: bottom ;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+
+  //background-blend-mode: multiply;
+  //background-color: #2a2a2a;
+}
+
+.about-title{
+  color: black ;
+  font-size: 2em ;
+  font-weight: bold;
+}
+
+.about-title{
+  color: black ;
+  font-size: 4em ;
+  font-weight: bold;
+}
