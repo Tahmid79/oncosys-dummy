@@ -4,16 +4,18 @@ import {MaterialModule} from './material/material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import {RouterModule} from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    ToolbarComponent
+    ToolbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule, MaterialModule, FlexLayoutModule, RouterModule
   ],
-  exports: [MaterialModule, FlexLayoutModule, ToolbarComponent]
+  exports: [MaterialModule, FlexLayoutModule, ToolbarComponent, FooterComponent]
 })
 export class SharedModule { }
