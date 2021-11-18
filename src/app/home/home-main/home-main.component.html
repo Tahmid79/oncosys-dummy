@@ -1,15 +1,22 @@
-<div class="home-container">
+<div class="home-container" ngClass.gt-xs="regular-height" ngClass.xs="mobile-height">
 
-  <div fxFlexOffset="2%"  fxLayout="column" fxLayoutAlign="space-around">
+  <div  fxLayout="column"
+        fxFlexOffset.gt-xs="2%"  fxLayoutAlign.gt-xs="space-around"
+        fxLayoutGap.xs="20%" >
 
-    <div class="image-container" >
+    <div class="image-container" ngClass.xs="top-margin"
+         fxLayout.xs="row" fxLayoutAlign.xs="center none" >
       <img [src]="logoUrl" />
     </div>
 
-    <div class="title-containers" fxLayout="column">
+    <div class="title-containers" ngClass.xs="center-align"
+         fxLayout="column"
+         fxLayoutAlign.xs="none center">
+
         <h1>{{oncosys}}</h1>
         <h1>{{our_site}}</h1>
         <p>{{description}}</p>
+
     </div>
 
   </div>

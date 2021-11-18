@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeMainComponent implements OnInit {
   logoUrl = 'assets/images/logo.png' ;
   oncosys = 'Oncosys International' ;
-  our_site = 'Our site is launching soon.' ;
+  our_site = 'Our site is launching soon' ;
   description = 'Oncosys International is a global trading company with its branches in the tech and infrastructure development segment of Bangladesh' ;
 
   constructor() { }

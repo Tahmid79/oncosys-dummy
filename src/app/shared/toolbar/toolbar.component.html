@@ -1,4 +1,5 @@
-<mat-toolbar class="toolbar" fxLayout="row" fxLayoutAlign="space-between center">
+<mat-toolbar class="toolbar" ngClass.gt-xs="regular-height" ngClass.xs="mobile-height"
+             fxLayout="row" fxLayoutAlign="space-between center">
   <div>
     <button mat-button [routerLink]="['/']" fxFlex="column" fxLayoutAlign="space-around center" >
       <img class="logo-img" [src]="logoUrl"   />
