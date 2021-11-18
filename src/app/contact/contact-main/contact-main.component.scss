@@ -1,0 +1,36 @@
+.contact-container{
+  height: 100vh ;
+  background-image: url("/assets/images/info-bg.jpg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: bottom ;
+
+  //background-color: rgba(255,255,255,0.5);
+  //background-blend-mode: lighten;
+
+  background-blend-mode: multiply;
+  background-color: #666666;
+}
+
+.contact-container *{
+  color: white ;
+}
+
+.contact-title{
+  font-size: 3em ;
+  font-weight: bold;
+}
+
+.submit-button{
+  margin-top: 1em ;
+  background-color: darkblue;
+  border-radius: 0.3em ;
+  width: 50%;
+  height: 3em ;
+  font-size: 1.5em ;
+}
+
+app-form-field{
+  width: 50% ;
+}
+
