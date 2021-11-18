@@ -1,7 +1,10 @@
-<div class="footer-container" fxLayout="row" fxLayoutAlign="space-between center" >
+<div class="footer-container" ngClass.xs="mobile-height" ngClass.gt-xs="regular-height"
+     fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center"
+     fxLayout.xs="column" fxLayoutAlign.xs="center center">
 
-  <div class="copywright-container" fxFlex="20%" fxFlexOffset="3%" >
+  <div class="copywright-container" fxFlex.gt-xs="40%" fxFlexOffset="3%"
+  fxFlex.xs="100%" fxLayoutAlign.xs="center center" fxLayout.xs="column" >
     <h3>{{copywright}}</h3>
   </div>
-  
+
 </div>

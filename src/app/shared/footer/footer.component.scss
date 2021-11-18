@@ -1,11 +1,18 @@
 .footer-container{
   background-color: black ;
-  height: 30vh ;
   width: 100% ;
 
   *{
     color: white ;
   }
 
+}
+
+.regular-height{
+  height: 30vh ;
+}
+
+.mobile-height{
+  height: 12vh ;
 }
 
