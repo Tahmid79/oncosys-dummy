@@ -5,21 +5,23 @@
   background-repeat: no-repeat ;
   background-position: bottom ;
 
-  background-color: rgba(255,255,255,0.5);
-  background-blend-mode: lighten;
+  //background-color: rgba(255,255,255,0.5);
+  //background-blend-mode: lighten;
 
-  //background-blend-mode: multiply;
-  //background-color: #2a2a2a;
+  background-blend-mode: multiply;
+  background-color: #666666;
+}
+
+.about-container *{
+  color: white ;
 }
 
 .about-title{
-  color: black ;
   font-size: 3em ;
   font-weight: bold;
 }
 
 .get-to-know{
-  color: black ;
   font-size: 5em ;
   font-weight: bold;
 }
