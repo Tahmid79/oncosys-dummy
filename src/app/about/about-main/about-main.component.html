@@ -1,10 +1,12 @@
-<div class="about-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="2%">
+<div class="about-container" ngClass.gt-xs="regular-height" ngClass.xs="mobile-height"
+     fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="2%">
 
-  <h1 class="about-title" fxFlexOffset="5%">
+  <h1 class="about-title" fxFlexOffset.xs="10%" fxFlexOffset.gt-xs="5%">
    {{about}}
   </h1>
 
-  <h1 class="get-to-know" fxFlexOffset="8%">
+  <h1 ngClass.gt-xs="get-to-know" fxFlexOffset.gt-xs="8%"
+      ngClass.xs="get-to-know-mobile" fxFlexOffset.xs="10%">
       {{get_to_know}}
   </h1>
 
