@@ -14,4 +14,12 @@ jobs:
 workflows:
   deploy_my_app:
     jobs:
-      - deploy
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+
+
+
+
