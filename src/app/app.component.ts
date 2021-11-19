@@ -1,21 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import {Meta} from "@angular/platform-browser";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'oncosys-dummy';
-  constructor(private metaService: Meta) {
-  }
-  ngOnInit(): void {
-    this.metaService.updateTag({
-        name: 'viewport',
-        content: `height=${window.innerHeight}px, width=${window.innerWidth}px, initial-scale=1.0`
-      },
-      `name='viewport'`
-    );
-  }
 }
