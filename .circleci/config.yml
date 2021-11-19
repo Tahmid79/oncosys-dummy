@@ -1,0 +1,18 @@
+version: '2.1'
+orbs:
+  node: circleci/node@4.7.0
+jobs:
+  deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      commands:
+        - npm run build --prod
+        - ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+workflows:
+  deploy_my_app:
+    jobs:
+      - deploy
